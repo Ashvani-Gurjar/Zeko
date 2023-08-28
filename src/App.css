@@ -1,38 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* custom colors  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bgcolor: #f1f5fd;
+  --primary-color: #6f5de7;
+  --text-color: #828286;
+  --main-text-color: #333333;
+}
+
+
 .App {
-  text-align: center;
+  background-color: #fefefe;
+  height: 100vh;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* // Footer part start */
+
+footer {
+  padding: 3rem 0;
+  background-color: #182334;
+  color: #fff;
+  width: 100%;
+  margin-top: 80vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer h2 {
+  color: #fff;
+}
+.item{
+  margin-top: 43px;
+}
+footer li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #fff;
+  cursor: pointer;
+  margin: .5rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer li:hover {
+  color: var(--primary-color);
+}
+
+
+footer .fontawesome-style {
+  font-size: 2rem;
+  color: var(--primary-color);
+  background-color: transparent;
+  width: 0rem;
+  height: 0rem;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+footer .fontawesome-style:hover {
+  transition: all 1s;
+  animation: rotatefont 1s linear infinite alternate-reverse;
+  color: #fff;
+}
+
+@keyframes rotatefont {
+  0% {
+    transform: scale(0.6);
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: scale(1.2);
   }
 }
+
+footer .main-hero-para {
+  margin: 0;
+}
+
+/* Footer part end */
